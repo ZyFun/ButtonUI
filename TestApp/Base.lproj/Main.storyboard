@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0q-Ja-JCG">
+                                <rect key="frame" x="125" y="633" width="125" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9BA-gu-6Ma"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ4-bS-eP6">
+                                <rect key="frame" x="166.66666666666666" y="120.99999999999999" width="41.666666666666657" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeG-Rf-lDK" userLabel="Button Action2">
+                                <rect key="frame" x="125" y="595" width="125" height="30"/>
+                                <state key="normal" title="Action 2"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uv-Ot-cHe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hd3-Fy-DKA" userLabel="Button Action1">
+                                <rect key="frame" x="125" y="557" width="125" height="30"/>
+                                <state key="normal" title="Action 1"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="my3-oe-kPv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B0q-Ja-JCG" secondAttribute="bottom" constant="115" id="HdC-UN-3WO"/>
+                            <constraint firstItem="B0q-Ja-JCG" firstAttribute="top" secondItem="PeG-Rf-lDK" secondAttribute="bottom" constant="8" id="Jty-hY-mlU"/>
+                            <constraint firstItem="PeG-Rf-lDK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OVK-lf-py0"/>
+                            <constraint firstItem="B0q-Ja-JCG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PKS-aU-OWy"/>
+                            <constraint firstItem="PeG-Rf-lDK" firstAttribute="width" secondItem="B0q-Ja-JCG" secondAttribute="width" id="e3r-mZ-afb"/>
+                            <constraint firstItem="hd3-Fy-DKA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f8C-eX-70w"/>
+                            <constraint firstItem="B0q-Ja-JCG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="iLd-aW-1nL"/>
+                            <constraint firstItem="RJ4-bS-eP6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="iWF-K5-nj3"/>
+                            <constraint firstItem="hd3-Fy-DKA" firstAttribute="width" secondItem="PeG-Rf-lDK" secondAttribute="width" id="lyK-c3-lBm"/>
+                            <constraint firstItem="RJ4-bS-eP6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sBE-ya-4Y0"/>
+                            <constraint firstItem="PeG-Rf-lDK" firstAttribute="top" secondItem="hd3-Fy-DKA" secondAttribute="bottom" constant="8" id="vGv-jY-eY2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="B0q-Ja-JCG" id="HKf-8n-TtD"/>
+                        <outlet property="textLabel" destination="RJ4-bS-eP6" id="RGZ-Fm-LAL"/>
+                        <outletCollection property="actionButtons" destination="hd3-Fy-DKA" collectionClass="NSMutableArray" id="LAK-8a-Xif"/>
+                        <outletCollection property="actionButtons" destination="PeG-Rf-lDK" collectionClass="NSMutableArray" id="DNh-R2-yA9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="133.74384236453201"/>
         </scene>
     </scenes>
 </document>

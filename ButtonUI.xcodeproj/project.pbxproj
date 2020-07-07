@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C66507924B49DD0009479A3 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C66507924B49DD0009479A3 /* ButtonUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C66507C24B49DD0009479A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C66507E24B49DD0009479A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C66508024B49DD0009479A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		2C66507A24B49DD0009479A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C66507924B49DD0009479A3 /* TestApp.app */,
+				2C66507924B49DD0009479A3 /* ButtonUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C66507824B49DD0009479A3 /* TestApp */ = {
+		2C66507824B49DD0009479A3 /* ButtonUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C66508D24B49DD1009479A3 /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildConfigurationList = 2C66508D24B49DD1009479A3 /* Build configuration list for PBXNativeTarget "ButtonUI" */;
 			buildPhases = (
 				2C66507524B49DD0009479A3 /* Sources */,
 				2C66507624B49DD0009479A3 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TestApp;
+			name = ButtonUI;
 			productName = TestApp;
-			productReference = 2C66507924B49DD0009479A3 /* TestApp.app */;
+			productReference = 2C66507924B49DD0009479A3 /* ButtonUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C66507424B49DD0009479A3 /* Build configuration list for PBXProject "TestApp" */;
+			buildConfigurationList = 2C66507424B49DD0009479A3 /* Build configuration list for PBXProject "ButtonUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C66507824B49DD0009479A3 /* TestApp */,
+				2C66507824B49DD0009479A3 /* ButtonUI */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +292,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.zyfunphoto.TestApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ButtonUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.zyfunphoto.TestApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ButtonUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C66507424B49DD0009479A3 /* Build configuration list for PBXProject "TestApp" */ = {
+		2C66507424B49DD0009479A3 /* Build configuration list for PBXProject "ButtonUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C66508B24B49DD1009479A3 /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C66508D24B49DD1009479A3 /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+		2C66508D24B49DD1009479A3 /* Build configuration list for PBXNativeTarget "ButtonUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C66508E24B49DD1009479A3 /* Debug */,
